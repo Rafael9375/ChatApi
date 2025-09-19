@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|c:\\users\\rafae\\documents\\appteste\\chatapi\\chatapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|solutionrelative:chatapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|c:\\users\\rafae\\documents\\appteste\\chatapi\\chatapi\\context\\dbchatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|solutionrelative:chatapi\\context\\dbchatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|c:\\users\\rafae\\documents\\appteste\\chatapi\\chatapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|solutionrelative:chatapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|c:\\users\\rafae\\documents\\appteste\\chatapi\\chatapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|solutionrelative:chatapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|c:\\users\\rafae\\documents\\appteste\\chatapi\\chatapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|solutionrelative:chatapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|c:\\users\\rafae\\documents\\appteste\\chatapi\\chatapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|solutionrelative:chatapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|c:\\users\\rafae\\documents\\appteste\\chatapi\\chatapi\\migrations\\20250919182504_produtoinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF63B0CB-C9C2-4E81-ADC3-318B7B89D97A}|ChatAPI\\ChatAPI.csproj|solutionrelative:chatapi\\migrations\\20250919182504_produtoinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "ChatAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\appsettings.json*",
+              "RelativeToolTip": "ChatAPI\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-19T20:10:14.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "ChatAPI\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "ChatAPI\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAApwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T18:32:01.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250919182504_ProdutoInicial.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\Migrations\\20250919182504_ProdutoInicial.cs",
+              "RelativeDocumentMoniker": "ChatAPI\\Migrations\\20250919182504_ProdutoInicial.cs",
+              "ToolTip": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\Migrations\\20250919182504_ProdutoInicial.cs",
+              "RelativeToolTip": "ChatAPI\\Migrations\\20250919182504_ProdutoInicial.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T18:25:05.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DBChatContext.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\Context\\DBChatContext.cs",
+              "RelativeDocumentMoniker": "ChatAPI\\Context\\DBChatContext.cs",
+              "ToolTip": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\Context\\DBChatContext.cs",
+              "RelativeToolTip": "ChatAPI\\Context\\DBChatContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:30:01.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "ChatAPI\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\Models\\Usuario.cs",
+              "RelativeToolTip": "ChatAPI\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:28:21.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ChatAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ChatAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-18T12:15:18.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ChatAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\rafae\\Documents\\AppTeste\\ChatAPI\\ChatAPI\\Program.cs",
+              "RelativeToolTip": "ChatAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:05:38.319Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
