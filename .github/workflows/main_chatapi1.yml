@@ -15,10 +15,10 @@ jobs:
     permissions:
       contents: read #This is required for actions/checkout
 
-  env:
-    SOLUTION_FILE: ChatApi/ChatAPI.sln                  # <--- ajuste se não estiver na raiz
-    API_PROJECT: ChatApi/ChatAPI/ChatAPI.csproj         # <--- caminho do .csproj da Web API
-    PUBLISH_DIR: ${{ github.workspace }}\publish
+    env:
+      SOLUTION_FILE: ChatApi/ChatAPI.sln                  # <--- ajuste se não estiver na raiz
+      API_PROJECT: ChatApi/ChatAPI/ChatAPI.csproj         # <--- caminho do .csproj da Web API
+      PUBLISH_DIR: ${{ github.workspace }}\publish
 
     steps:
       - uses: actions/checkout@v4
