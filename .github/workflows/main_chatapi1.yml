@@ -46,7 +46,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.PUBLISH_DIR}}/myapp
+          path: ${{env.PUBLISH_DIR}}
 
   deploy:
     runs-on: windows-latest
@@ -67,6 +67,7 @@ jobs:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_CA89C577336B4D60AD23734EC9D38334 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_241EEA86D9944EB3BF3CB34881793FF0 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D6040EA2256545EEBB10D481FBF62FB0 }}
+          path: app
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
