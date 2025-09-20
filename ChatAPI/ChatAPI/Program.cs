@@ -15,12 +15,16 @@ builder.Services.AddDbContext<DBChatContext>(options =>
 
 var app = builder.Build();
 
+app.MapOpenApi();
+app.UseSwaggerUI(options =>
+    options.SwaggerEndpoint("/openapi/v1.json", "weather api"));
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
-    app.UseSwaggerUI(options => 
-        options.SwaggerEndpoint("/openapi/v1.json", "weather api"));
+    //app.MapOpenApi();
+    //app.UseSwaggerUI(options => 
+    //    options.SwaggerEndpoint("/openapi/v1.json", "weather api"));
 
 }
 
