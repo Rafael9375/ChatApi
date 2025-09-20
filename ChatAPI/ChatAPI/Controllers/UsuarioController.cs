@@ -18,11 +18,11 @@ namespace ChatAPI.Controllers
         }
 
         [HttpGet]
-        public List<Usuario> Get()
+        public async Task<ActionResult<IEnumerable<Usuario>>> Get()
         {
             var lista = this.db.Usuarios.ToList();
             
-            return lista;
+            return Ok(lista);
         }
     }
 }
