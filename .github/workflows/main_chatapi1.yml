@@ -31,7 +31,7 @@ jobs:
       - name: Debug layout
         run: |
           pwd
-          dir /s /b
+          dir /ChatApi /ChatAPI
 
       - name: Restore
         run: dotnet restore "${{ env.SOLUTION_FILE }}"
