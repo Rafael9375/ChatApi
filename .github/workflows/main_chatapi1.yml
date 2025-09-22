@@ -19,6 +19,7 @@ jobs:
       SOLUTION_FILE: ChatApi/ChatAPI.sln                  # <--- ajuste se não estiver na raiz
       API_PROJECT: ChatApi/ChatAPI/ChatAPI.csproj         # <--- caminho do .csproj da Web API
       PUBLISH_DIR: ${{ github.workspace }}\publish
+      TEST_PROJECT: ChatApi/ChatApiXUnitTest/ChatApiXUnitTest.csproj
 
     steps:
       - uses: actions/checkout@v4
@@ -38,6 +39,11 @@ jobs:
 
       - name: Build (Release)
         run: dotnet build "${{ env.SOLUTION_FILE }}" --no-restore -c Release
+
+      - name: Test (xUnit)
+        run: dotnet test "${{ env.TEST_PROJECT }}" --no-build -c Release ^
+          --logger "trx;LogFileName=tests.trx" ^
+          --results-directory "${{ github.workspace }}\TestResults"
 
       - name: Publish Web API
         run: dotnet publish "${{ env.API_PROJECT }}" -c Release -o "${{ env.PUBLISH_DIR }}"
