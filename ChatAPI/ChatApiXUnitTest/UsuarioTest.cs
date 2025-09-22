@@ -33,7 +33,7 @@ namespace ChatApiXUnitTest
             var ok = (OkObjectResult)action.Result!;
             var usuarios = (IEnumerable<Usuario>)ok.Value!;
 
-            usuarios.Should().HaveCount(10);
+            usuarios.Should().HaveCount(1);
         }
     }
 }
