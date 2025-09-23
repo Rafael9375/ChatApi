@@ -19,7 +19,7 @@ jobs:
       API_PROJECT: ChatApi/ChatAPI/ChatAPI.csproj
       TEST_PROJECT: ChatApi/ChatApiXUnitTest/ChatApiXUnitTest.csproj
       PUBLISH_DIR: ${{ github.workspace }}\publish
-      FE_DIR: ChatApi/ChatAPI/chatportal
+      FE_DIR: ChatAPI/chatportal
 
     steps:
       - uses: actions/checkout@v4
@@ -53,9 +53,6 @@ jobs:
 
       - name: Listar arquivos do chatportal
         run: dir ChatAPI\chatportal
-
-      - name: Listar arquivos do chatportal
-        run: dir ChatAP6546546546556456465I\chatportal
 
       # ===== Frontend (Vite) =====
       - name: Set up Node.js
