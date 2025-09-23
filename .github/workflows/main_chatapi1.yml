@@ -76,12 +76,18 @@ jobs:
         working-directory: ${{ env.FE_DIR }}
         run: npm run build
 
+      - name: Renomear dist para build (compatibilidade Azure)
+        working-directory: ${{ env.FE_DIR }}
+        run: |
+          if exist build rmdir /s /q build
+          ren dist build
+
       # Artifact do Frontend
       - name: Upload Static Site artifact
         uses: actions/upload-artifact@v4
         with:
           name: static-app
-          path: ${{ env.FE_DIR }}\dist
+          path: ${{ env.FE_DIR }}\build
 
   deploy-api:
     runs-on: windows-latest
@@ -137,4 +143,3 @@ jobs:
           skip_app_build: true
           skip_api_build: true
 
-          
