@@ -54,6 +54,9 @@ jobs:
       - name: Listar arquivos do chatportal
         run: dir ChatAPI\chatportal
 
+      - name: Listar arquivos do chatportal
+        run: dir ChatAP6546546546556456465I\chatportal
+
       # ===== Frontend (Vite) =====
       - name: Set up Node.js
         uses: actions/setup-node@v4
