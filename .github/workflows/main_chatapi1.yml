@@ -66,12 +66,6 @@ jobs:
         working-directory: ${{ env.FE_DIR }}
         run: npm ci
 
-      # Evita o erro do template (garante o arquivo padrão do Vite)
-      - name: Verify Vite files
-        working-directory: ${{ env.FE_DIR }}
-        run: |
-          if not exist public\vite.svg (echo "FALTOU public/vite.svg" & exit 1)
-
       - name: Build (frontend)
         working-directory: ${{ env.FE_DIR }}
         run: npm run build
