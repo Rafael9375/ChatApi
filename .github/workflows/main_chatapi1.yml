@@ -81,7 +81,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: static-app
-          path: ${{ env.FE_DIR }}\build\*
+          path: ${{ env.FE_DIR }}\build
 
   deploy-api:
     runs-on: windows-latest
