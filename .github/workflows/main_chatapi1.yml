@@ -51,13 +51,21 @@ jobs:
           name: .net-app
           path: ${{ env.PUBLISH_DIR }}
 
+      - name: Verify lockfile path
+        run: |
+          echo "Workspace: %CD%"
+          dir ChatApi\ChatAPI\chatportal
+          if not exist ChatApi\ChatAPI\chatportal\package-lock.json (
+            echo "package-lock.json NÃO encontrado"; exit /b 1
+          )
+
       # ===== Frontend (Vite) =====
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: ${{ env.FE_DIR }}/package-lock.json
+          cache-dependency-path: ChatApi/ChatAPI/chatportal/package-lock.json
 
       - name: Install deps (frontend)
         working-directory: ${{ env.FE_DIR }}
