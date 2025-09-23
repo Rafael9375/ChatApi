@@ -51,6 +51,9 @@ jobs:
           name: .net-app
           path: ${{ env.PUBLISH_DIR }}
 
+      - name: Listar arquivos do chatportal
+        run: dir ChatApi\ChatAPI\chatportal
+
       # ===== Frontend (Vite) =====
       - name: Set up Node.js
         uses: actions/setup-node@v4
