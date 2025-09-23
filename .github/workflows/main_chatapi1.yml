@@ -57,7 +57,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: ${{ env.FE_DIR }}\package-lock.json
+          cache-dependency-path: ${{ env.FE_DIR }}/package-lock.json
 
       - name: Install deps (frontend)
         working-directory: ${{ env.FE_DIR }}
@@ -126,5 +126,7 @@ jobs:
           app_location: "swa"     # já é a pasta buildada (dist baixado como "swa")
           output_location: ""      # vazio pq já está pronto
           production_branch: "main"
+          skip_app_build: true      # ← IMPRESCINDÍVEL
+          skip_api_build: true      # ← se não tem API da SWA, ative também
 
           
