@@ -122,6 +122,7 @@ jobs:
           path: swa   # conteudo do dist vai para 'swa'
 
       - name: Inspect downloaded artifact
+        shell: cmd
         run: |
           dir swa
           if not exist swa\index.html (echo "index.html não encontrado em 'swa'." & exit /b 1)
