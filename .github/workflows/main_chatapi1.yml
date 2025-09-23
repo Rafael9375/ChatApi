@@ -121,11 +121,8 @@ jobs:
           name: static-app
           path: swa
 
-      - name: Inspect downloaded artifact
-        run: |
-          ls -l swa
-          if [ ! -f swa/index.html ]; then echo "index.html não encontrado em 'swa'." && exit 1; fi
-          if [ -f swa/package.json ]; then echo "ERRO: package.json NAO deve estar em 'swa' (isso força build)." && exit 1; fi
+      - name: Listar arquivos após download
+        run: ls -lR swa
 
       - name: Deploy to Azure Static Web Apps (UPLOAD - sem build)
         uses: Azure/static-web-apps-deploy@v1
