@@ -124,17 +124,22 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: static-app
-          path: swa
+          path: swa   # -> aqui ficam index.html e assets
 
-      - name: Deploy to Azure Static Web Apps
+      # (opcional) sanity check
+      - name: Inspect downloaded artifact
+        run: |
+          dir swa
+          if not exist swa\index.html (echo "index.html não encontrado em 'swa'." & exit /b 1)
+
+      - name: Deploy to Azure Static Web Apps (UPLOAD - sem build)
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-          app_location: "ChatApi/ChatAPI/chatportal"  # código do Vite
-          output_location: "dist"                      # <-- Vite output
           action: "upload"
-          production_branch: "main"
-          skip_app_build: true      # ← IMPRESCINDÍVEL
-          skip_api_build: true      # ← se não tem API da SWA, ative também
+          app_location: "swa"   # <- artefato pronto
+          output_location: ""   # <- VAZIO
+          skip_app_build: true
+          skip_api_build: true
 
           
