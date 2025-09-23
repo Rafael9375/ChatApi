@@ -1,0 +1,1 @@
+C:\Projetos\ChatApi\ChatAPI\ChatPortal\obj\Debug\chatportal.esproj.CoreCompileInputs.cache
