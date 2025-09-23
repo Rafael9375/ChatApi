@@ -116,21 +116,21 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: static-app
-          path: swa   # -> aqui ficam index.html e assets
+          path: swa   # conteudo do dist vai para 'swa'
 
-      # (opcional) sanity check
       - name: Inspect downloaded artifact
         run: |
           dir swa
           if not exist swa\index.html (echo "index.html não encontrado em 'swa'." & exit /b 1)
+          if exist swa\package.json (echo "ERRO: package.json NAO deve estar em 'swa' (isso força build)." & exit /b 1)
 
       - name: Deploy to Azure Static Web Apps (UPLOAD - sem build)
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "upload"
-          app_location: "swa"   # <- artefato pronto
-          output_location: ""   # <- VAZIO
+          app_location: "swa"   # <- raiz com index.html
+          output_location: "."  # <- artefato FINAL está na raiz
           skip_app_build: true
           skip_api_build: true
 
