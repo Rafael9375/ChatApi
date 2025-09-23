@@ -75,6 +75,9 @@ jobs:
         run: |
           if (Test-Path build) { Remove-Item -Recurse -Force build }
           Rename-Item dist build
+      
+      - name: Listar arquivos após download
+        run: ls -lR swa
 
       # Artifact do Frontend
       - name: Upload Static Site artifact
