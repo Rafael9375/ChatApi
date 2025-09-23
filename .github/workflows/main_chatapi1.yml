@@ -73,8 +73,8 @@ jobs:
       - name: Renomear dist para build (compatibilidade Azure)
         working-directory: ${{ env.FE_DIR }}
         run: |
-          if exist build rmdir /s /q build
-          ren dist build
+          if (Test-Path build) { Remove-Item -Recurse -Force build }
+          Rename-Item dist build
 
       # Artifact do Frontend
       - name: Upload Static Site artifact
