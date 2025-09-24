@@ -77,7 +77,7 @@ jobs:
           Rename-Item dist build
       
       - name: Listar arquivos após download
-        run: ls -lR swa
+        run: Get-ChildItem -Recurse swa
 
       # Artifact do Frontend
       - name: Upload Static Site artifact
