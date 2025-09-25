@@ -54,38 +54,6 @@ jobs:
       - name: Listar arquivos do chatportal
         run: dir ChatAPI\chatportal
 
-      # ===== Frontend (Vite) =====
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: ChatAPI/chatportal/package-lock.json
-
-      - name: Install deps (frontend)
-        working-directory: ${{ env.FE_DIR }}
-        run: npm ci
-
-      - name: Build (frontend)
-        working-directory: ${{ env.FE_DIR }}
-        run: npm run build
-
-      - name: Renomear dist para build (compatibilidade Azure)
-        working-directory: ${{ env.FE_DIR }}
-        run: |
-          if (Test-Path build) { Remove-Item -Recurse -Force build }
-          Rename-Item dist build
-      
-      - name: Listar arquivos após download
-        run: Get-ChildItem -Recurse swa
-
-      # Artifact do Frontend
-      - name: Upload Static Site artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: static-app
-          path: ${{ env.FE_DIR }}\build
-
   deploy-api:
     runs-on: windows-latest
     needs: build
@@ -114,26 +82,4 @@ jobs:
           slot-name: 'Production'
           package: app   # <- Corrigido (antes estava ".")
 
-  deploy-static:
-    runs-on: ubuntu-latest   # <--- troque para Linux
-    needs: build
-    steps:
-      - name: Download Static Site artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: static-app
-          path: swa
-
-      - name: Listar arquivos após download
-        run: ls -lR swa
-
-      - name: Deploy to Azure Static Web Apps (UPLOAD - sem build)
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: 49756b55c80eea4f139c6cd94248b9a8e93af3852f29164ac458017ab1e4decc02-772e479d-2581-424d-989e-9511056a201b00f02250efc9260f
-          action: "upload"
-          app_location: "swa"
-          output_location: "."
-          skip_app_build: true
-          skip_api_build: true
 
